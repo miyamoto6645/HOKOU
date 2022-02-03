@@ -1,0 +1,16 @@
+label{
+    /* ラベルの文字幅は、blockモードに変更しないと有効にならない */
+    display: block;
+    width: 100px;
+}
+form>div>input{
+    width: 200px;
+}
+form>div{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.tFieldLength{
+    width: 200px;
+}
