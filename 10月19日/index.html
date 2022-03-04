@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dynamic class change.</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		h1,
+		div {
+			background-color: antiquewhite;
+			width: 300px;
+		}
+
+		/* 初期状態で、下記のCSSはどこにも適用されていない */
+		.BlueBackStyle {
+			background-color: blue;
+			width: 310px;
+			color: red;
+		}
+
+		.f-container {
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>WEBデザインとは </h1>
+	<div>
+		<p>
+			Webデザインとは、Web上に表示されるページの見た目に関する制作を行うことを指します。Webサイト内のレイアウト変更や使用画像の作成など、幅広く関わることになります。
+		</p>
+		<p>
+			Webメディアやホームページの制作を指すことが多いですが、昨今ではWebサービスや広告用ランディングページのデザインもWebデザインと呼ばれています
+
+		</p>
+	</div>
+	<button> design change </button>
+</body>
+<script>
+	$(function () {
+		$("button").on("click", function () {
+			$("h1,div").css("background-color", "blue");
+			$("h1,div").css("color", "red");
+			$("h1,div").css("width", "300px");
+		});
+	});
+	// ｊQueryの始まり
+
+	// ボタンをクリックされたときに処理を行う
+
+	// h1タグにクラスBlueBackStyleを追加
+
+	// bodyタグ直下のdivのみにクラスBlueBackStyleを追加
+
+	$(function () {
+		$("button").on("click", function () {
+			$("h1,div").addClass("BlueBackStyle");
+			$("h1,div").addClass("color", "red");
+			$("h1,div").addClass("width", "300px");
+			$("h1").addClass("BlueBackStyle")
+		});
+	});
+</script>
+<div class="f-container">
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+</div>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>fadeIn/ fadeOut</title>
+	<style>
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#contents {
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="contents">
+		<main>
+			<h1>Lenovo </h1>
+			<p>元IBMで、現在はLenovoに買収されたコンピュータ部門</p>
+		</main>
+	</div>
+
+	<button id="btnFadeOut"> fade Out </button>
+	<button id="btnFadeIn"> fade in </button>
+</body>
+
+<script>
+	// jqueryの始まり
+	$(function () {
+
+	});
+	// ボタンbtnFadeOutをクリックした時の処理
+	$("").on("click", function () {
+		// mainタグがクリックされたら、1500ms欠けてフェードアウトする
+		$("main").fadeIn(1000);
+	});
+	// ボタンbtnFadeInがクリックされ他時の処理
+	$("".on("click", function () {
+		// mainタグを1000msかけてフェードインする
+		$("main").fadeOut(2000);
+	})
+	);
+
+</script>
+
+</html>

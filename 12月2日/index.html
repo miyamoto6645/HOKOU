@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            position: relative;
+        }
+
+        .tooltip {
+            width: 130px;
+            padding: 10px;
+            font-size: 12px;
+            margin: -30px 0 0;
+            background-color: #666;
+            color: #fff;
+            position: absolute;
+            right: -160px;
+            top: 50%;
+        }
+
+        .tooltip::before {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            border-color: rgba(102, 102, 102, 0);
+            border-right-color: #5e5e5e;
+            border-width: 8px;
+            margin-top: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>テキストボックス</th>
+            <td>
+                <input id="c1" type="checkbox" name="check" />
+                <label for="c1">選択肢1</label>
+                <input id="c2" type="checkbox" name="check" />
+                <label for="c2">選択肢2</label>
+                <p class="tooltip">チェックボックスのツールボックス</p>
+            </td>
+        </tr>
+        <tr>
+            <th>ラジオボタン</th>
+            <td>
+                <input id="r1" type="radio" name="radio" />
+                <label for="r1">選択肢1</label>
+                <input id="r2" type="radio" name="radio" />
+                <label for="r2">選択肢2</label>
+                <p class="tooltip">ラジオボタンのツールチップ</p>
+            </td>
+        </tr>
+        <tr>
+            <th>セレクトボックス</th>
+            <td>
+                <select name="select">
+                    <option value="選択肢1">選択肢1</option>
+                    <option value="選択肢2">選択肢2</option>
+                    <option value="選択肢3">選択肢3</option>
+                </select>
+                <p class="tooltip">セレクトボックスのツールチップ</p>
+            </td>
+        </tr>
+        <tr>
+            <th>テキストエリア</th>
+            <td>
+                <textarea cols="30" rows="7"></textarea>
+                <p class="tooltip">テキストエリアのツールチップ</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

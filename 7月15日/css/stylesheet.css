@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+header,footer{
+    width: 100%;
+    background-color: aqua;
+
+}
+aside{
+    width: 30%;
+    background-color: aquamarine;
+
+}
+main{
+    width: 70%;
+    background-color:beige;
+}
+footerContainer{
+    border: solid 1px rebeccapurple;
+    display: none;
+    justify-content: space-between;
+}
+button{
+    margin: 10px;
+
+}
