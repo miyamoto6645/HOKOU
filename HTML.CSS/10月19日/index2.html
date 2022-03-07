@@ -32,22 +32,18 @@
 </body>
 
 <script>
-	// jqueryの始まり
-	$(function () {
-
+	$("btnFadeOut").fadeOut(2000, function () {
+		console.log('フェードアウトされました!');
 	});
-	// ボタンbtnFadeOutをクリックした時の処理
-	$("").on("click", function () {
-		// mainタグがクリックされたら、1500ms欠けてフェードアウトする
-		$("main").fadeIn(1000);
+	$("btnFadeOut").on('click', function () {
+		alert("クリックされました");
 	});
-	// ボタンbtnFadeInがクリックされ他時の処理
-	$("".on("click", function () {
-		// mainタグを1000msかけてフェードインする
-		$("main").fadeOut(2000);
-	})
-	);
-
+	$("btnFadeIn").fadeIn(2000, function () {
+		console.log('フェードインされました!');
+	});
+	$("btnFadeIn").on('click', function () {
+		alert("クリックされました");
+	});
 </script>
 
 </html>

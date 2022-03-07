@@ -81,5 +81,14 @@
         </tr>
     </table>
 </body>
+function tooltip(){
+//内容
+this.content = document.creaElement('div');
+this.content.className ='tooltip-content';
+//影
+this.shadow = document.createElement('div');
+this.content.className = 'tooltip-shadow';
+this.shadow.appendChild(this.content);
+}
 
 </html>
