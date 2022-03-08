@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="server.php" method="get">
+        <div>
+            <label for="iOndoC">セ氏温度</label>
+            <input type="text" name="nOndoC" id="iOndoC" class="tFiledLength">
+        </div>
+        <div>
+            <label for="iOndoC">華氏温度</label>
+            <input type="text" name="nOndoF" id="iOndoF" class="tFiledLength">
+        </div>
+        <div>
+            <label for="iOndoK">絶対温度</label>
+            <input type="text" name="nOndoK" id="iOndoK" class="tFiledLength">
+        </div>
+        <div>
+            <input type="submit" value="send data." id="submit">
+            <input type="reset" value="cancel .">
+        </div>
+</body>
+<script src="script.js"></script>
+
+</html>
