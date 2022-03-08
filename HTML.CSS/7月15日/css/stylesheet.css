@@ -5,8 +5,10 @@ body{
 }
 header,footer{
     width: 100%;
-    background-color: aqua;
-
+    padding: 15px 0;
+    margin: 0 auto ;
+    text-align: center;
+    background-color: aqua;   
 }
 aside{
     width: 30%;
@@ -17,15 +19,7 @@ main{
     width: 70%;
     background-color:beige;
 }
-footerContainer{
-    border: solid 1px rebeccapurple;
-    display: none;
-    justify-content: space-between;
-}
+
 button{
     margin: 10px;
-}
-.iHeader{
-    display: flex;
-    flex-wrap: wrap;
 }
