@@ -8,13 +8,17 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>fadeIn/ fadeOut</title>
 	<style>
-		* {
-			padding: 0px;
-			margin: 0px;
+		h1,div{
+			background-color: bisque;
+			width: 300px;
 		}
-
-		#contents {
-			height: 200px;
+		.BlueBackStyle{
+			background-color: navy;
+			width: 310px;
+			color: red;
+		}
+		.f-container{
+			display: flex;
 		}
 	</style>
 </head>
@@ -32,18 +36,26 @@
 </body>
 
 <script>
-	$("btnFadeOut").fadeOut(2000, function () {
-		console.log('フェードアウトされました!');
+	$(function(){
+		$("button").on("click",function(){
+			$("h1,div").css("backgroud-color","blue");
+			$("h1,div").css("color","red");
+			$("h1,div").css("width","300px");
 	});
-	$("btnFadeOut").on('click', function () {
-		alert("クリックされました");
-	});
-	$("btnFadeIn").fadeIn(2000, function () {
-		console.log('フェードインされました!');
-	});
-	$("btnFadeIn").on('click', function () {
-		alert("クリックされました");
+});
+	$(function(){
+		$("button").on("click",function(){
+			$("h1,div").addClass("BlueBackStyle");
+			$("h1,div").addClass("color","yellow");
+			$("h1,div").addClass("width","300px");
+			$("h1").addClass("BlueBackStyle");
+		});
 	});
 </script>
+<div class="f-container">
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+</div>
 
 </html>
